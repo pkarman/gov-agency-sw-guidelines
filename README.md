@@ -92,23 +92,23 @@ deps:  ### Install dependencies
 	bundle install
 ```
 
-In a single repository there may be multiple languages and dependencies represented. A simple make deps should install everything.
+In a single repository there may be multiple languages and dependencies represented. A simple `make deps` should install everything.
 
 ##### make setup
 
-This target should bootstrap the application so it is ready to run: initializing databases, adding seed data, harnessing any services required. For example, if the deployment target is a Docker image, this target might build the Docker image. (The Dockerfile itself may call make deps internally.)
+This target should bootstrap the application so it is ready to run: initializing databases, adding seed data, harnessing any services required. For example, if the deployment target is a Docker image, this target might build the Docker image. (The Dockerfile itself may call `make deps` internally.)
 
-Whatever your application requires in order to run make test should be handled by the make setup target.
+Whatever your application requires in order to run `make test` should be handled by the `make setup` target.
 
 ##### make lint
 
 All code should adhere to explicitly defined linting and formatting rules. Examples include black and flake8 for Python, rubocop for Ruby, eslint and prettier for JavaScript.
 
-The particular tool(s) and specific rules for each language are not as important as the fact that they are enforced programmatically with the make lint target. Linting rules should adhere as closely to the standard out-of-the-box rule set for the tool as possible, and exceptions should be documented. The linting configuration files should be committed to the Git repository. We don’t want to waste developer time with competing ideas about the proper use of whitespace, semicolons, braces and the like. If the development team decides to deviate from a standard rule, document and enforce it via the configuration file and move on to more meaningful work. We understand how important the ergonomics of writing code are to developers, so make lint is intended to reduce distractions.
+The particular tool(s) and specific rules for each language are not as important as the fact that they are enforced programmatically with the `make lint` target. Linting rules should adhere as closely to the standard out-of-the-box rule set for the tool as possible, and exceptions should be documented. The linting configuration files should be committed to the Git repository. We don’t want to waste developer time with competing ideas about the proper use of whitespace, semicolons, braces and the like. If the development team decides to deviate from a standard rule, document and enforce it via the configuration file and move on to more meaningful work. We understand how important the ergonomics of writing code are to developers, so `make lint` is intended to reduce distractions.
 
 The `make lint` target should modify (fix) files in place so that a git diff against a fresh checkout will quickly indicate if any files were committed without being properly formatted. The [pre-commit](https://pre-commit.com/) tool can be helpful for automating the linting checks prior to committing to a branch.
 
-The make lint check will be part of every standard CI check and a pull request should not be allowed to merge if the make lint target fails to complete without making any changes.
+The `make lint` check will be part of every standard CI check and a pull request should not be allowed to merge if the `make lint` target fails to complete without making any changes.
 
 ##### make test
 
