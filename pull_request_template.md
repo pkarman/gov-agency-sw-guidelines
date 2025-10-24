@@ -2,7 +2,8 @@
 
 _Be concise and descriptive, use an imperative mood, and ensure the title provides a clear summary._
 
-_Example: Poor title: “bug fix” Good title: “fix: correct off-by-one error in pagination logic.” See Graphite’s [best practices for writing good pull request titles] ([https://graphite.dev/guides/best-pr-title-guidelines](https://graphite.dev/guides/best-pr-title-guidelines)) for more information._
+_Example: Poor title: “bug fix” Good title: “fix: correct off-by-one error in pagination logic.”_
+_See Graphite’s [best practices for writing good pull request titles](https://graphite.dev/guides/best-pr-title-guidelines) for more information._
 
 ### Linked Ticket(s)
 
