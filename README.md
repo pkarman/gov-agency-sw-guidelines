@@ -84,12 +84,12 @@ Install all the dependencies necessary to run the application. This target may b
 
 ```
 deps:  ### Install dependencies
-# for Python
-pip install -r requirements.txt
-# for JavaScript or TypeScript
-npm install
-# for Ruby
-bundle install
+	# for Python
+	pip install -r requirements.txt
+	# for JavaScript or TypeScript
+	npm install
+	# for Ruby
+	bundle install
 ```
 
 In a single repository there may be multiple languages and dependencies represented. A simple make deps should install everything.
