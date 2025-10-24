@@ -32,10 +32,6 @@ See the [Choosing dependencies](./doc/choosing-dependencies.md) guide.
 
 [Your Agency] uses Git and GitHub.
 
-Every language and framework community has its own conventions for directory layout and naming,  
-but for the sake of some minimal level of consistency across [Your Agency] applications,  
-we expect the following basic conventions.
-
 #### Code Owner Documentation
 
 Teams MUST identify named reviewers per domain (Code Owners) for each top or domain level directory and maintain that list in the repository.
