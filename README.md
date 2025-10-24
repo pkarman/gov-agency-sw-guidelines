@@ -12,8 +12,7 @@ and development of the source is performed in a publically visible manner.
 
 According to the Colorado Digital Service’s [Modern Software Delivery Maturity Index](https://github.com/coloradodigitalservice/modern-software-delivery-maturity-index), one of the signs of a mature modular contracting pattern is “Defaults to Open Sourcing as much code as possible.”
 
-See the [18F open source policy](https://github.com/18F/open-source-policy/blob/master/policy.md)  
-for further rationale and background.
+See the [18F open source policy](https://github.com/18F/open-source-policy/blob/master/policy.md) for further rationale and background.
 
 See the [LICENSE](#licensemd) section for example.
 
@@ -31,7 +30,7 @@ See the [Choosing dependencies](./doc/choosing-dependencies.md) guide.
 
 ### Source control
 
-[Your Agency] uses Git and Github.
+[Your Agency] uses Git and GitHub.
 
 Every language and framework community has its own conventions for directory layout and naming,  
 but for the sake of some minimal level of consistency across [Your Agency] applications,  
