@@ -12,13 +12,13 @@ _Briefly describe what this PR changes and why._
 
 ### Risk and Rollback
 
-Risk Level:
+#### Risk Level:
 
 - [ ] Low – Minor UI or copy changes
 - [ ] Medium – Logic or configuration changes
 - [ ] High – Security, data model, API, or infrastructure changes
 
-### Rollback Plan
+#### Rollback Plan
 
 _How would this change be safely reverted if needed_
 
