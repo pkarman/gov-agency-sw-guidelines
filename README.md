@@ -4,6 +4,10 @@ This document describes standards and conventions for software development of [Y
 
 ## Software Standards
 
+This guide has strong opinions on what [Your Agency] expects to see in software development patterns.
+
+See the [18f Engineering Guide](https://guides.18f.org/engineering/) for more tools and process ideas.
+
 ### Open source
 
 [Your Agency] software development defaults to open. This means that we use  
