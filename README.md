@@ -136,7 +136,7 @@ MUST link to an Architecural Decision Record (ADR) when the Pull Request:
 
 - Introduces breaking API changes, such as removing/renaming fields, behavior changes, or auth/permission shifts.
 - Introduces new public surface areas, such as a new external endpoint, new event type/stream or new DB table.
-- Changes contracts across teams or vendors, such as when a change forces other teams to adapt their code accordingly.
+- Changes API contracts across teams or vendors, such as when a change forces other teams to adapt their code accordingly.
 - Introduces DB schema changes that affect persistence, integrity, or performance (new/changed tables, columns, indexes, constraints).
 - Elevates data classification, such as introducing regulated data or changes how regulated data is handled.
 
@@ -354,6 +354,8 @@ Timezone-specific formatting is allowed only at the presentation edge (UI, repor
 
 ## Component Boundaries
 
+Follow the [18F guide on APIs](https://guides.18f.org/engineering/our-approach/apis/) and prefer API-first software designs.
+
 ### APIs over implicit coupling
 
 Services MUST communicate through explicit, versioned APIs (REST, gRPC, event streams, etc).
@@ -398,8 +400,6 @@ Environment-specific values (URLS, endpoints, credentials, paths) MUST be abstra
 Hard-coded URLs, proxy paths, and credentials in source code are prohibited.
 
 CI SHOULD scan for hard-coded URLs and secrets.
-
-##
 
 ## Security and Compliance
 
