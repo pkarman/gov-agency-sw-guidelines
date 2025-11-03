@@ -128,7 +128,7 @@ Exceptions to guidelines MAY be granted, given a formal request. Written excepti
 
 ### Pull Requests
 
-Feature branches SHOULD present meaningful commits (use –fixup/–autosquash). A single squash commit is allowed, but not required, when the change reads best as one unit.
+Feature branches SHOULD present meaningful commits (use `–fixup`/`–autosquash`). A single squash commit is allowed, but not required, when the change reads best as one unit.
 
 Pull Requests MUST follow the provided template. In instances where the template contains irrelevant sections, the developer MUST comment N/A or comparable; no response indicates an incomplete Pull Request.
 
@@ -209,7 +209,7 @@ Branch and merge protections for core branches MUST:
 - Personal feature branches: Developers MAY push partial/WIP commits to their own feature branches at any time. Use Draft MRs until the changes is review-ready to reduce noise
 - Shared branches: Avoid pushing half-done work to shared feature branches unless the team on that branch has explicitly agreed to it.
 - Commits SHOULD be small and logically grouped; push frequently to avoid local loss
-- When merging into main or comparable trunk, the default strategy MUST be rebase and merge (preserve commits)
+- When merging into `main` or comparable trunk, the default strategy MUST be a single commit with a meaningful commit log message. The goal is a tidy commit history on the `main` branch with each commit linking back to a single pull request. By "meaningful" we mean that the commit message should reflect the same level of detail found in the pull request template.
 
 ## Naming and Readability Standards (language-agnostic core)
 
