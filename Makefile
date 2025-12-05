@@ -6,6 +6,9 @@
 # the SHELL defaults to /bin/sh which may vary depending on OS
 SHELL=/bin/bash
 
+# quiet calling of make internally
+MAKEFLAGS += --no-print-directory
+
 # the help target should always come first so that it is the default target
 # the .PHONY boilerplate is required for each target unless it correlates to a real file name.
 # See the Makefile documentation. 
