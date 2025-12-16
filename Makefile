@@ -6,12 +6,15 @@
 # the SHELL defaults to /bin/sh which may vary depending on OS
 SHELL=/bin/bash
 
+# quiet calling of make internally
+MAKEFLAGS += --no-print-directory
+
 # the help target should always come first so that it is the default target
 # the .PHONY boilerplate is required for each target unless it correlates to a real file name.
 # See the Makefile documentation. 
 .PHONY: help
 help:  ## Print this message
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-24s\033[0m %s\n", $$1, $$2}'
+	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-24s\033[0m %s\n", $$1, $$2}'
 
 
 .PHONY: deps
